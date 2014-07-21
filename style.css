@@ -1,0 +1,228 @@
+/*
+Theme Name: Kibar Magangan
+Theme URI: http://underscores.me/
+Author: Kibar
+Author URI: http://kibar.co.id
+Description: Wordpress Theme for Kibar Magangan Blog
+Version: 1.0-wpcom
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: kibar-magangan
+Domain Path: /languages/
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+ Kibar Magangan is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+*/
+
+/** IMPORT
+===================================*/
+@font-face{font-family:'SegoeWP';src:url('font/SegoeWP.ttf') format('truetype');}
+@font-face{font-family:'SegoeWPLight';src:url('font/SegoeWP-Light.ttf') format('truetype');}
+@font-face{font-family:'SegoeWPBold';src:url('font/SegoeWP-Bold.ttf') format('truetype');}
+@font-face{font-family:'SegoeWPSemibold';src:url('font/SegoeWP-Semibold.ttf') format('truetype');}
+
+/** GLOBAL STYLES
+===================================*/
+
+body {
+	background-color: #eceff1;
+	background-image:url(img/bg-1.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 100% 500px;
+	font-family: 'SegoeWPLight';
+}
+h1 { font-size: 3.5em; font-family: 'SegoeWPLight'; }
+p { font-size: 1.3em; }
+a:hover { text-decoration: none; }
+
+/** NAVBAR STYLES
+===================================*/
+
+.navbar .container {
+	padding: 0 50px;
+}
+
+.navbar .social-link {
+	margin:10px 5px;
+	padding:0;
+}
+
+.navbar-brand {
+	padding: 0;
+}
+
+.navbar-nav > li > a {
+	color: #FFF !important;
+}
+
+.navbar-nav > li > a:hover {
+	text-decoration: underline;
+}
+
+
+.navbar-nav > li > a.active {
+	color: #F68948 !important;
+}
+
+/** HEADER STYLES
+===================================*/
+
+header#masthead {
+	padding-top:10em;
+	padding-bottom:6em;
+}
+
+/** CONTENT STYLES
+===================================*/
+
+#page {
+}
+
+#content {
+	margin-bottom: 5em;
+	max-width: 1000px;
+}
+
+article {
+	background:#fff;
+	margin: 2em;
+	position: relative;
+}
+
+article .timestamp {
+	position: absolute;
+	left: -4.4em;
+	width: 45px;
+	background-color: #414042;
+	padding-left: .3em;
+	padding-right: .3em;
+	padding-bottom: 2em;
+}
+
+@media (max-width: 760px) {
+	article { margin-left: 4em; }
+} 
+
+article .timestamp.latest {
+	background-color: #4635aa;
+}
+
+article .timestamp .date,
+article .timestamp .month,
+article .timestamp .year {
+	display: block;
+	text-align: center;
+	color: #fff;
+}
+
+article .timestamp .date {
+	font-size: 2em;
+	font-family: "SegoeWPBold";
+	border-bottom: 1px solid #fff;
+}
+
+article .timestamp .month {
+	text-transform: uppercase;
+}
+
+article .post-full .entry-meta {
+	padding-bottom: 2em;
+}
+
+article .entry-meta .byline .avatar img {
+	border-radius: 100px;
+}
+
+article .entry-meta .byline .author {
+	font-family: "SegoeWPBold";
+}
+
+article .entry-title {
+	margin-top: 10px;
+}
+
+article .entry-title a {
+	color: #000;
+}
+
+article .latest .entry-title,
+article .post-full .entry-title {
+	font-size: 5em;
+	margin-top: 20px;
+}
+
+article .post-excerpt {
+	padding: 0 2em 0 0;
+}
+article .post-full {
+	padding: 0 3em 0 3em;
+}
+
+article .latest .post-excerpt {
+	padding: 0 3em 1em 3em;
+}
+
+article .post-full-footer {
+	padding: 2em;
+}
+
+article .post-full-footer ul,
+article .post-full-footer ul li {
+	margin:0; padding:0;
+	display: inline-block;
+}
+
+article .post-featured-image img {
+	height:100%;
+	width:100%;
+}
+
+article .latest .post-featured-image {
+	height:300px;
+}
+
+article .more-link {
+	font-size: 0.7em;
+	font-family: "SegoeWPBold";
+}
+
+.navigation .nav-links {
+	text-align: center;
+}
+
+.navigation .nav-links .nav-previous,
+.navigation .nav-links .nav-next {
+	background: #414042;
+	display: inline-block;
+	padding: .5em 1.5em;
+}
+
+.navigation .nav-links .nav-previous a,
+.navigation .nav-links .nav-next a {
+	color: #fff;
+	font-family: "SegoeWPBold";
+}
+
+
+/** FOOTER STYLES
+===================================*/
+
+footer#colophon {
+	position: relative;
+	padding: 6em 2em;
+	background-color: #616161;
+	color: #fff;
+}
+
+footer#colophon img {
+	/*
+	box-shadow: 0 0 0 30px #000 inset;
+	ini jadi bikin bg logonya jadi black gitu
+	*/
+	display: block;
+	margin-bottom: 30px;
+}
