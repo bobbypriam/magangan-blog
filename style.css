@@ -42,10 +42,6 @@ a:hover { text-decoration: none; }
 /** NAVBAR STYLES
 ===================================*/
 
-.navbar .container {
-	padding: 0 50px;
-}
-
 .navbar .social-link {
 	margin:10px 5px;
 	padding:0;
@@ -76,18 +72,21 @@ header#masthead {
 	padding-bottom:6em;
 }
 
+.page-header {
+	border-bottom: none;
+}
+
 /** CONTENT STYLES
 ===================================*/
-
-#page {
-}
 
 #content {
 	margin-bottom: 5em;
 	max-width: 1000px;
 }
 
-article {
+article,
+.error-404,
+.no-results {
 	background:#fff;
 	margin: 2em;
 	position: relative;
@@ -225,4 +224,20 @@ footer#colophon img {
 	*/
 	display: block;
 	margin-bottom: 30px;
+}
+
+.error-404,
+.no-results {
+	padding: 1em 3em 3em 3em;
+}
+
+.archive .page-header,
+.search-results .page-header {
+	margin: 2em;
+	padding: .3em 1em 1em;
+}
+
+.archive .page-header .page-title,
+.search-results .page-header .page-title {
+	color: #fff;
 }

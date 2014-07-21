@@ -29,7 +29,7 @@
 
     		<?php if ( 'post' == get_post_type() ) : ?>
     		<div class="entry-meta">
-    			<?php kibar_magangan_byline(); //kibar_magangan_posted_on(); ?>
+    			<?php kibar_magangan_byline(); ?>
     		</div><!-- .entry-meta -->
     		<?php endif; ?>
     	</header><!-- .entry-header -->
