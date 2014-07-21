@@ -102,10 +102,6 @@ article .timestamp {
 	padding-bottom: 2em;
 }
 
-@media (max-width: 760px) {
-	article { margin-left: 4em; }
-} 
-
 article .timestamp.latest {
 	background-color: #4635aa;
 }
@@ -176,7 +172,7 @@ article .post-full-footer ul li {
 }
 
 article .post-featured-image img {
-	height:100%;
+	height:auto;
 	width:100%;
 }
 
@@ -188,6 +184,15 @@ article .more-link {
 	font-size: 0.7em;
 	font-family: "SegoeWPBold";
 }
+
+@media (max-width: 760px) {
+	article { margin-left: 4em; }
+	article .post-featured-image img {max-height: 150px;}
+	article .latest .post-featured-image {height:auto;}
+	article .post-excerpt { margin:2em; }
+	article .latest .post-excerpt { margin: 0; }
+	article .entry-title, article .latest .entry-title, article .post-full .entry-title { font-size: 3em; }
+} 
 
 .navigation .nav-links {
 	text-align: center;
