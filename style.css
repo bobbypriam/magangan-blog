@@ -24,6 +24,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @font-face{font-family:'SegoeWPBold';src:url('font/SegoeWP-Bold.ttf') format('truetype');}
 @font-face{font-family:'SegoeWPSemibold';src:url('font/SegoeWP-Semibold.ttf') format('truetype');}
 
+/* --------------------- Theme From Home -------------------------- */
+
 /** GLOBAL STYLES
 ===================================*/
 
@@ -39,8 +41,30 @@ h1 { font-size: 3.5em; font-family: 'SegoeWPLight'; }
 p { font-size: 1.3em; }
 a:hover { text-decoration: none; }
 
+/* Blog unique */
+footer#colophon {
+	position: relative;
+	padding: 5em 2em;
+}
+
+@media (min-width: 768px) {
+	footer#colophon {
+		padding: 5em 3em;
+	}
+}
+
+.navbar .container,
+footer#colophon .container {
+	width: auto;
+}
+/* End blog unique */
+
 /** NAVBAR STYLES
 ===================================*/
+
+.navbar .container {
+	padding: 0 30px;
+}
 
 .navbar .social-link {
 	margin:10px 5px;
@@ -59,10 +83,57 @@ a:hover { text-decoration: none; }
 	text-decoration: underline;
 }
 
-
 .navbar-nav > li > a.active {
 	color: #F68948 !important;
 }
+
+.navbar-right {
+	display: block;
+}
+
+@media (max-width: 768px) {
+	.navbar {
+		top:0;
+	}
+
+	.navbar .container {
+		padding: 0 20px;
+	}
+
+	.navbar-right {
+		display: none;
+	}
+
+	.navbar-special .navbar-toggle {
+  	border-color: #eee;
+	}
+
+	.navbar-special .navbar-toggle:hover,
+	.navbar-special .navbar-toggle:focus {
+	  background-color: rgba(238, 238, 238, 0.6);
+	}
+	.navbar-special .navbar-toggle .icon-bar {
+	  background-color: #fff;
+	}
+}
+/** FOOTER STYLES
+===================================*/
+
+footer#colophon {
+	background-color: #616161;
+	color: #fff;
+}
+
+footer#colophon img {
+	/*
+	box-shadow: 0 0 0 30px #000 inset;
+	ini jadi bikin bg logonya jadi black gitu
+	*/
+	display: block;
+	margin-bottom: 30px;
+}
+
+/* --------------------- End Theme From Home -------------------------- */
 
 /** HEADER STYLES
 ===================================*/
@@ -211,25 +282,8 @@ article .more-link {
 	font-family: "SegoeWPBold";
 }
 
-
-/** FOOTER STYLES
+/** UNIQUE PAGE STYLES
 ===================================*/
-
-footer#colophon {
-	position: relative;
-	padding: 6em 2em;
-	background-color: #616161;
-	color: #fff;
-}
-
-footer#colophon img {
-	/*
-	box-shadow: 0 0 0 30px #000 inset;
-	ini jadi bikin bg logonya jadi black gitu
-	*/
-	display: block;
-	margin-bottom: 30px;
-}
 
 .error-404,
 .no-results {
